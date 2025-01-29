@@ -23,11 +23,8 @@ WRAPPER_PATH="/usr/local/bin/metta-run"
 
 # Step 1: Clone the repository
 # If the repository already exists, ignore this step
-if [ -d "$INSTALL_DIR" ]; then
-		echo "The repository already exists. Skipping cloning."
-else
-		echo "Cloning the repository..."
-		git clone $REPO_URL $INSTALL_DIR || error "Failed to clone repository."
+echo "Cloning the repository..."
+git clone $REPO_URL $INSTALL_DIR || error "Failed to clone repository."
 fi
 cd $INSTALL_DIR || error "Failed to enter the repository directory."
 
