@@ -13,7 +13,7 @@ command -v pip3 >/dev/null 2>&1 || error "pip3 is required but not installed. Ab
 
 
 # Variables
-REPO_URL="https://github.com/iCog-Labs-Dev/metta-prebuilt-binary.git"
+REPO_URL="https://github.com/nathnael-desta/metta-prebuilt-binary.git"
 INSTALL_DIR="$HOME/metta-bin"
 VENV_DIR="$INSTALL_DIR/venv"
 BINARY_PATH="$INSTALL_DIR/v0.1.11/metta"
